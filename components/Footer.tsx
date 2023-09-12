@@ -5,10 +5,10 @@ const Footer = () => {
   return (
     <footer className="grid grid-cols-2 md:flex md:flex-row w-full p-4 md:p-20 justify-between">
         {footerLinks.map(link => (
-            <ul className="mb-4 md:mb-0">
+            <ul className="mb-4 md:mb-0" key={link.title}>
                 <li className="capitalize font-semibold text-lg mb-2">{link.title}</li>
                 {link.links.map(child => (
-                    <li className={`${link.links.indexOf(child) !== link.links.length -1 && 'mb-2'}`}>
+                    <li key={child.title} className={`${link.links.indexOf(child) !== link.links.length -1 && 'mb-2'}`}>
                         <Link
                             href={child.link}
                             className='capitalize text-sm'

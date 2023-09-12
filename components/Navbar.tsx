@@ -4,33 +4,51 @@ import { navigationsLink } from "@/contants"
 import { Menu, Transition } from "@headlessui/react"
 import Image from "next/image"
 import Link from "next/link"
-import { Fragment, useState } from "react"
+import { Fragment, useEffect, useState } from "react"
 
 const Navbar = () => {
     const [showMenu, setShowMenu] = useState(false)
 
+    const [scrolled, setScrolled] = useState(false)
+
+    useEffect(() => {        
+        const toggleLogo = () => {
+            const scrolled = document.documentElement.scrollTop;
+            
+            if (scrolled > 300) {
+                setScrolled(true)
+            }
+            if (scrolled <= 300) {
+                setScrolled(false)
+            }   
+        }
+
+        window.addEventListener('scroll', toggleLogo)
+    }, [])
+
     return (
-        <nav className="w-full flex justify-center z-10">
-            <p className="text-3xl absolute top-8 left-16 hidden md:block">
+        <nav className="w-full flex justify-center z-20">
+            <p className={`text-3xl fixed top-2 left-16 hidden md:block ${!scrolled && 'opacity-0'} transition-all`}>
                 Lux<span className="font-extrabold">Living.</span>
             </p>
 
-            <div className="w-full md:w-1/2 py-4 md:p-0 px-8 bg-primary/75 md:bg-transparent backdrop-blur md:backdrop-blur-none fixed">
-                <div className="md:hidden flex flex-row justify-between">
+            <div className={`w-full md:w-1/2 py-4 md:p-0 px-8 ${scrolled ? 'bg-primary/75': 'bg-primary/0'} backdrop-blur md:bg-transparent md:backdrop-blur-none fixed transition-opacity`}>
+                <div className='md:hidden flex flex-row justify-between'>
                     <Link
                         href='/'
-                        className="text-2xl"
+                        className={`text-2xl ${!scrolled && 'opacity-0'} transition-opacity`}
                     >
                         Lux<span className="font-extrabold">Living.</span>
                     </Link>
+                    
                     <Menu as="div">
                         <Menu.Button onClick={() => setShowMenu(prev => !prev)} >
                             <Image
-                                src={showMenu ? '/close.svg' : '/menu.svg'}
+                                src='/menu.svg'
                                 alt="menu"
-                                width={showMenu ? 14 : 6}
-                                height={showMenu ? 14 : 6}
-                                className="invert transition-all"
+                                width={6}
+                                height={6}
+                                className="invert transition-all "
                             />
                         </Menu.Button>
 
@@ -71,6 +89,7 @@ export const LinkItems = ({isMobile}: {isMobile: boolean}) => {
         <>
             {navigationsLink.map(link => (
                 <Link
+                    key={link.title}
                     href={link.route}
                     className={`text-black ${isMobile ? 'text-lg' : 'text-xl'} uppercase font-semibold ${isMobile && 'mb-2'}`}
                 >

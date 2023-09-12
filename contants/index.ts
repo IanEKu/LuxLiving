@@ -1,3 +1,36 @@
+export const collectionShowcase = [
+    {
+        title: 'modern design',
+        discount: 40,
+        special: null,
+        category: 'child',
+        image: {
+            url: '/products/modern-bathroom.jpg',
+            alt: 'modern bathroom'
+        },
+    },
+    {
+        title: 'make your comfort zone',
+        discount: 0,
+        special: 'best sell',
+        category: 'child',
+        image: {
+            url: '/products/modern-sofa1.jpg',
+            alt: 'modern sofa'
+        },
+    },
+    {
+        title: 'make your living room comfier',
+        discount: 30,
+        special: 'new offer',
+        category: 'parent',
+        image: {
+            url: '/products/modern-livingroom2.jpg',
+            alt: 'modern living room'
+        },
+    },
+]
+
 export const navigationsLink = [
     {
         title: 'Home',
@@ -104,162 +137,119 @@ export const products = [
         title: 'Modern Bathroom',
         category: 'modern',
         color: null,
-        image: {
-            url: '/products/modern-bathroom.jpg',
-            blur: 'LCFiS,009a-;9@V@D%%M~qxu-pIo',
-        }
+        image: '/products/modern-bathroom.jpg'
     },
     {
         title: 'Modern Couch',
         category: 'modern',
         color: 'black',
-        image: {
-            url: '/products/modern-black-couch.jpg',
-            blur: 'LDAAO1%f9FR.%%xtMwo0=^WVIVM{',
-        }
+        price: 65.0,
+        image: '/products/modern-black-couch.jpg'
     },
     {
         title: 'Modern Lazy Couch',
         category: 'modern',
         color: 'black',
-        image: {
-            url: '/products/modern-black-lazycouch.jpg',
-            blur: 'LiL;W}r?%MWBj[aeRjWB_NtRRjt7',
-        }
+        price: 67.9,
+        image: '/products/modern-black-lazycouch.jpg'
     },
     {
         title: 'Modern Table',
         category: 'modern',
         color: 'black',
-        image: {
-            url: '/products/modern-black-table.jpg',
-            blur: 'LdO:@PM{t7ae~qWBM{ofM{xuofWB',
-        }
+        price: 89.78,
+        image: '/products/modern-black-table.jpg'
     },
     {
         title: 'Modern Lamp',
         category: 'modern',
         color: 'gray',
-        image: {
-            url: '/products/modern-lamp.jpg',
-            blur: '',
-        }
+        price: 43.4,
+        image: '/products/modern-lamp.jpg'
     },
     {
         title: 'Modern Living Room',
         category: 'modern',
         color: null,
-        image: {
-            url: '/products/modern-livingroom.jpg',
-            blur: '',
-        }
+        image: '/products/modern-livingroom.jpg'
     },
     {
         title: 'Modern Living Room',
         category: 'modern',
         color: null,
-        image: {
-            url: '/products/modern-livingroom1.jpg',
-            blur: 'LWIhW@009vkB?wRPV?NGWEWqs,WA',
-        }
+        image: '/products/modern-livingroom1.jpg'
     },
     {
         title: 'Modern Living Room',
         category: 'modern',
         color: null,
-        image: {
-            url: '/products/modern-livingroom1.jpg',
-            blur: '',
-        }
+        image: '/products/modern-livingroom1.jpg'
     },
     {
         title: 'Modern Living Room',
         category: 'modern',
         color: null,
-        image: {
-            url: '/products/modern-livingroom2.jpg',
-            blur: '',
-        }
+        image: '/products/modern-livingroom2.jpg'
     },
     {
         title: 'Modern Sofa',
         category: 'modern',
         color: 'gray',
-        image: {
-            url: '/products/modern-sofa.jpg',
-            blur: '',
-        }
+        price: 78.6,
+        image: '/products/modern-sofa.jpg'
     },
     {
         title: 'Modern Sofa',
         category: 'modern',
         color: 'gray-blue',
-        image: {
-            url: '/products/modern-sofa1.jpg',
-            blur: '',
-        }
+        price:  76.6,
+        image: '/products/modern-sofa1.jpg'
     },
     {
         title: 'Wooden Bookshelf',
         category: 'wooden',
         color: 'light-wood',
-        image: {
-            url: '/products/wooden-bookshelf.jpg',
-            blur: '',
-        }
+        price: 67.4,
+        image: '/products/wooden-bookshelf.jpg'
     },
     {
         title: 'Wooden Chair',
         category: 'wooden',
         color: 'dark-wood',
-        image: {
-            url: '/products/wooden-chair.jpg',
-            blur: '',
-        }
+        price: 45.3,
+        image: '/products/wooden-chair.jpg'
     },
     {
         title: 'Wooden Closet',
         category: 'wooden',
         color: 'dark-wood',
-        image: {
-            url: '/products/wooden-closet.jpg',
-            blur: '',
-        }
+        price: 108.2,
+        image: '/products/wooden-closet.jpg'
     },
     {
         title: 'Wooden Workroom',
         category: 'wooden',
         color: null,
-        image: {
-            url: '/products/wooden-workroom.jpg',
-            blur: '',
-        }
+        image: '/products/wooden-workroom.jpg'
     },
     {
         title: 'Bohemian Bookshelf',
         category: 'bohemian',
         color: 'black',
-        image: {
-            url: '/products/bohemian-bookshelf.jpg',
-            blur: '',
-        }
+        price: 56.4,
+        image: '/products/bohemian-bookshelf.jpg'
     },
     {
         title: 'Bohemian Chair',
         category: 'bohemian',
         color: 'light-wood',
-        image: {
-            url: '/products/bohemian-chair.jpg',
-            blur: '',
-        }
+        price: 66.4,
+        image: '/products/bohemian-chair.jpg'
     },
     {
         title: 'Bohemian Living Room',
         category: 'bohemian',
         color: null,
-        image: {
-            url: '/products/bohemian-livingroom.jpg',
-            blur: 'LHMj]yDi.9e.8^ofWCof?wtRITof'
-        }
+        image: '/products/bohemian-livingroom.jpg'
     },
 ]

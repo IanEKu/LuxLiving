@@ -9,15 +9,16 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        'primary': '#141414',
-        'secondary': '#FFD600'
+        'primary': 'var(--primary)',
+        'secondary': 'var(--secondary)'
       },
       borderWidth: {
         '1': '1px'
       },
       backgroundImage: {
-        'hero': "url('/products/modern-livingroom1.jpg')"
-      }
+        'hero': "url('/products/modern-livingroom1.jpg')",
+        'fading': "linear-gradient(to bottom, rgba(255,255,255,0) 0%, var(--primary) 100%);"
+      },
     }
   },
   plugins: [],
