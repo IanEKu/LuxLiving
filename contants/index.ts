@@ -1,4 +1,4 @@
-export const collectionShowcase = [
+export const collectionShowcase: CollectionShowcaseItem[] = [
     {
         title: 'modern design',
         discount: 40,
@@ -31,26 +31,26 @@ export const collectionShowcase = [
     },
 ]
 
-export const navigationsLink = [
+export const navigationsLink: NavigationLinkItem[] = [
     {
         title: 'Home',
         route: '/',
     },
     {
-        title: 'Shop',
-        route: '#shop',
+        title: 'Collection',
+        route: '/collections',
     },
     {
-        title: 'Collection',
-        route: '#collection',
+        title: 'Shop',
+        route: '/shop',
     },
     {
         title: 'About',
-        route: '#shop',
+        route: '#about',
     },
 ]
 
-export const footerLinks = [
+export const footerLinks: FooterLinkItem[] = [
     {
         title: 'company',
         links: [
@@ -117,14 +117,14 @@ export const footerLinks = [
     },
 ]
 
-export const productCategories = [
+export const productCategories: ProductCategory[] = [
     'modern',
     'bohemian',
     'classy',
     'wooden'
 ]
 
-export const productColors = [
+export const productColors: ProductColor[] = [
     'black',
     'gray',
     'gray-blue',
@@ -132,7 +132,7 @@ export const productColors = [
     'dark-wood',
 ]
 
-export const products = [
+export const products: ProductItem[] = [
     {
         title: 'Modern Bathroom',
         category: 'modern',
@@ -172,12 +172,6 @@ export const products = [
         category: 'modern',
         color: null,
         image: '/products/modern-livingroom.jpg'
-    },
-    {
-        title: 'Modern Living Room',
-        category: 'modern',
-        color: null,
-        image: '/products/modern-livingroom1.jpg'
     },
     {
         title: 'Modern Living Room',

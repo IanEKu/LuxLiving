@@ -29,7 +29,12 @@ const Hero = () => {
                 Lux<span className="font-extrabold">Living.</span>
             </p>
             <p className={`${poppinsBlack.className} text-4xl md:text-6xl md:leading-tight`}>Elevate your home with exquisite furniture that combine style and comfort</p>
-            <button type="button" className='bg-transparent border-1 border-secondary text-secondary uppercase rounded-full py-2 px-2 text-2xl font-bold w-3/4 md:w-1/2 mt-4'>discover more</button>
+            <button
+                type="button"
+                className='bg-transparent border-1 border-secondary text-secondary uppercase rounded-full py-2 px-2 text-lg md:text-2xl font-bold w-3/4 md:w-1/2 mt-4'
+            >
+                discover more
+            </button>
         </div>
     )
 }

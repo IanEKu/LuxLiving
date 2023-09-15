@@ -11,8 +11,7 @@ type Props = {
 }
 
 const LazyImage = async ({src, alt, width, height, className, local}: Props) => {
-    const source = `${local ? process.env.PUBLIC_URL : ''}${src}`
-    const bluredImg = await getBase64(source)
+    const bluredImg = await fetch(`${process.env.PUBLIC_URL}/api/getBase64?url=${src}`).then(data => data.json())
     
   return (
     <Image

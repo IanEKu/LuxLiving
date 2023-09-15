@@ -8,6 +8,10 @@
   --background-end-rgb: 255, 255, 255;
   --primary: #141414;
   --secondary: #FFD600;  
+  --mainSkeletonBg: #111111;
+  --mainSkeletonHlt: #232323;
+  --secondarySkeletonBg: #232323;
+  --secondarySkeletonHlt: #343434;
 }
 
 /* width */

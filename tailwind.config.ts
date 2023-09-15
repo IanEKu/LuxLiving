@@ -17,7 +17,8 @@ const config: Config = {
       },
       backgroundImage: {
         'hero': "url('/products/modern-livingroom1.jpg')",
-        'fading': "linear-gradient(to bottom, rgba(255,255,255,0) 0%, var(--primary) 100%);"
+        'fading': "linear-gradient(to bottom, rgba(255,255,255,0) 0%, var(--primary) 100%);",
+        'about': "url('/products/bohemian-livingroom.jpg')",
       },
     }
   },
