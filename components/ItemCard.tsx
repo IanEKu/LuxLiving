@@ -6,12 +6,12 @@ import 'react-loading-skeleton/dist/skeleton.css'
 type Props = {
     product: ProductItem,
     boldPoppins: string
-    page?: boolean | null | "collections"
+    page: boolean | "collections" | "component"
 }
 
 const ItemCard = ({product, boldPoppins, page}: Props) => {
   return (
-    <div className={`rounded-3xl ${page ? 'w-full h-48 p-2 md:h-80 md:p-3' : 'md:w-80 min-w-full md:min-w-0 h-80 p-3'} mr-4 md:m-0 bg-white relative`}>
+    <div className={`rounded-3xl ${page === "component" ? 'md:w-80 min-w-full md:min-w-0 h-80 p-3' : 'w-full h-48 p-2 md:h-80 md:p-3'} mr-4 md:m-0 bg-white relative`}>
       {
         <>
           {

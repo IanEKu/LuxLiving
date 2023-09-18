@@ -8,6 +8,7 @@ import { ReactElement } from 'react'
 import hero1 from '@/public/products/modern-livingroom1.jpg'
 import hero2 from '@/public/products/bohemian-livingroom.jpg'
 import LazyImage from '@/components/LazyImage'
+import Products from '@/components/Products'
 
 export const revalidate = 0
 
@@ -106,30 +107,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="mt-16 md:mt-20 w-full px-4 md:p-0">
-        <header className='flex flex-col items-center w-full mb-5'>
-          <h1 className={`${poppinsBold.className} text-6xl text-secondary`}>Our Products</h1>
-        </header>
-        <article className="flex flex-col items-center">
-          <div className="flex flex-row justify-start md:justify-around w-full md:w-5/6 overflow-scroll">
-            {
-              products.filter(product => product.color !== null).slice(0, 3).map((product, index) => (
-                <ItemCard
-                  product={product}
-                  boldPoppins={poppinsBold.className}
-                  key={index}
-                />
-              ))
-            }
-          </div>
-          <Link
-            href='/shop'
-            className='text-secondary font-bold mx-auto mt-4 px-8 py-1 border-1 border-secondary rounded-full'
-          >
-            See more
-          </Link>
-        </article>
-      </section>
+      <Products poppinsBold={poppinsBold} />
 
       <section className="mt-20 h-screen w-full bg-about bg-cover bg-center md:bg-none" id='about'>
         <article className="flex md:grid grid-cols-2 grid-rows-1 h-full gap-4">
